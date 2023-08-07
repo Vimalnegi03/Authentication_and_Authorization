@@ -1,7 +1,6 @@
 const User =require('../models/userModal.js')
 const emailvalidator=require('email-validator')
 const bcrypt=require('bcrypt')
-
 exports.Home=async(req,res)=>{
     res.send("chloo ghar")
 }
