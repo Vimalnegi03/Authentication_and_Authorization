@@ -61,6 +61,7 @@ exports.signin=async(req,res,next)=>{
             message:"All fields are necessary"
         })
     } 
+    
     try {
         const user= await User.findOne({email}).select('+password')
         if(!user|| await bcrypt.compare(user.password,password))
