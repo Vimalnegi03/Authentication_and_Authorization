@@ -23,6 +23,7 @@ exports.signup=async(req,res)=>{
         success:"false"
     })
  }
+    
  if(password!=confirmPassword)
  {
   return res.status(400).json({
