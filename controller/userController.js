@@ -30,6 +30,7 @@ exports.signup=async(req,res)=>{
      message:"your password did not  matched"
   })
  }
+    
  try {
     const user=new User(req.body)
     const userinfo=await user.save()
