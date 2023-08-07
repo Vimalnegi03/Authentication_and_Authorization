@@ -14,6 +14,7 @@ exports.signup=async(req,res)=>{
             success:"false"
         })
     }
+    
  const validemail=emailvalidator.validate(email)
  if(!validemail)
  {
