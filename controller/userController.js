@@ -40,6 +40,7 @@ exports.signup=async(req,res)=>{
         message:"registered succesfully"
     })
  } 
+     
  catch (error) {
     if(error.code===11000)
     {
