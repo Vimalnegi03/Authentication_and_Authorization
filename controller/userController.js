@@ -73,6 +73,7 @@ exports.signin=async(req,res,next)=>{
                 success:false
             })
         }
+        
         const token =user.jwtToken();
         user.password=undefined
         const cookieOption={
