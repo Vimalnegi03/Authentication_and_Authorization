@@ -36,8 +36,8 @@ exports.signup=async(req,res)=>{
         success:true,
         message:"registered succesfully"
     })
-
- } catch (error) {
+ } 
+ catch (error) {
     if(error.code===11000)
     {
         return res.status(400).json({
