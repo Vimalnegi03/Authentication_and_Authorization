@@ -94,6 +94,7 @@ exports.signin=async(req,res,next)=>{
         })
     }
 }
+
 exports.getUser=async(req,res,next)=>{
     const user=req.user.id
     try {
