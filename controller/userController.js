@@ -4,6 +4,7 @@ const bcrypt=require('bcrypt')
 exports.Home=async(req,res)=>{
     res.send("chloo ghar")
 }
+
 exports.signup=async(req,res)=>{
     const {name,email,password,confirmPassword}=req.body;
     if(!name||!password||!email||!confirmPassword)
