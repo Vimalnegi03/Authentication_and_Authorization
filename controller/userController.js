@@ -80,7 +80,8 @@ exports.signin=async(req,res,next)=>{
             message:"login successfull",
             data:user
         })
-    } catch (error) {
+    } 
+    catch (error) {
         res.status(400).json({
             success:false,
             message:error.message,
@@ -97,7 +98,8 @@ exports.getUser=async(req,res,next)=>{
             message:"details successfully accessed",
             data:user
         })
-    } catch (error) {
+    } 
+    catch (error) {
         res.status(400).json({
             success:false,
             message:"request failed",
@@ -118,7 +120,8 @@ exports.logout=(req,res,next)=>{
             message:"log out successfully",
            
         })
-    } catch (error) {
+    } 
+    catch (error) {
         res.status(400).json({
             success:false,
             message:"request failed",
